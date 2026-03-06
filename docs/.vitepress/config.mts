@@ -42,7 +42,7 @@ export default defineConfig({
   ...teek,
   themeConfig: {
     ...(teek.themeConfig as any),
-    logo: '/images/hero.jpg',
+    // logo: '/images/hero.jpg',
     siteTitle: '项成康',
     nav: [
       { text: '下载', link: '/download/' },
