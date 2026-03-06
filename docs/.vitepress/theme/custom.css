@@ -1,0 +1,152 @@
+/* Force nav menu visible on Teek full image banner */
+.VPNavBar.full-img-nav-bar .VPNavBarMenu {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Make menu text readable on dark earth background */
+.VPNavBar.full-img-nav-bar .VPNavBarMenu .VPNavBarMenuLink,
+.VPNavBar.full-img-nav-bar .VPNavBarMenu .VPLink,
+.VPNavBar.full-img-nav-bar .content-body .title {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.VPNavBar.full-img-nav-bar .VPNavBarMenu .VPNavBarMenuLink:hover,
+.VPNavBar.full-img-nav-bar .VPNavBarMenu .VPLink:hover {
+  color: #ffffff !important;
+}
+
+/* App-store style download center */
+.download-center {
+  margin-top: 12px;
+}
+
+.download-subtitle {
+  font-size: 15px;
+  opacity: 0.85;
+  margin-bottom: 16px;
+}
+
+.download-toolbar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.dl-chip {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  text-decoration: none !important;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-soft);
+}
+
+.dl-chip:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+
+.dl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 14px 0 28px;
+}
+
+.dl-card {
+  display: block;
+  text-decoration: none !important;
+  color: inherit;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  padding: 16px;
+  background: var(--vp-c-bg-soft);
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.dl-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.dl-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.dl-head h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.dl-badge {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--vp-c-brand-1) 15%, transparent);
+  color: var(--vp-c-brand-1);
+  border: 1px solid color-mix(in srgb, var(--vp-c-brand-1) 35%, transparent);
+  white-space: nowrap;
+}
+
+.dl-badge.neutral {
+  color: var(--vp-c-text-2);
+  border-color: var(--vp-c-divider);
+  background: transparent;
+}
+
+.dl-card p {
+  margin: 10px 0 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+}
+
+.dl-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.tag {
+  font-size: 12px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  padding: 2px 8px;
+  background: var(--vp-c-bg);
+}
+
+.tag.win { border-color: #3b82f6; color: #3b82f6; }
+.tag.mac { border-color: #a855f7; color: #a855f7; }
+.tag.linux { border-color: #10b981; color: #10b981; }
+
+.dl-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary,
+.btn-ghost {
+  font-size: 13px;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.btn-primary {
+  color: #fff;
+  background: var(--vp-c-brand-1);
+}
+
+.btn-ghost {
+  color: var(--vp-c-text-2);
+  border: 1px solid var(--vp-c-divider);
+}
