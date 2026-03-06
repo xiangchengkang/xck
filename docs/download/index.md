@@ -1,43 +1,52 @@
 ---
 title: 下载中心
-layout: doc
+outline: [2, 3]
 ---
 
 # 下载中心
 
-<div class="download-hub">
-  <a class="download-card" href="/download/internal-inspector/">
-    <div class="title">内网巡检助手</div>
-    <div class="meta">自研软件 · Windows x64 · 最新 v1.2.0</div>
-    <div class="desc">自动巡检主机状态与端口连通性，支持报告导出。</div>
-    <span class="btn">查看版本与下载</span>
-  </a>
+这里是软件总览页。你可以先按软件选择，再进入对应详情页查看：
 
-  <a class="download-card" href="/download/release-helper/">
-    <div class="title">发布助手</div>
-    <div class="meta">自研软件 · Win/Linux · 最新 v0.9.3</div>
-    <div class="desc">一键打包部署，支持多环境配置与回滚。</div>
-    <span class="btn">查看版本与下载</span>
-  </a>
+- 多版本下载
+- 安装/使用教程
+- 更新日志
+- 常见问题
 
-  <a class="download-card" href="/download/git/">
-    <div class="title">Git</div>
-    <div class="meta">开源工具 · 版本控制</div>
-    <div class="desc">代码协作基础工具，支持分支管理与团队开发。</div>
-    <span class="btn">查看教程</span>
-  </a>
+## 自研软件
 
-  <a class="download-card" href="/download/vscode/">
-    <div class="title">Visual Studio Code</div>
-    <div class="meta">开源工具 · 代码编辑器</div>
-    <div class="desc">轻量高效编辑器，插件生态丰富。</div>
-    <span class="btn">查看教程</span>
-  </a>
+### 内网巡检助手
 
-  <a class="download-card" href="/download/nodejs/">
-    <div class="title">Node.js</div>
-    <div class="meta">开源工具 · 运行时</div>
-    <div class="desc">前后端工具链基础运行环境，建议使用 LTS 版本。</div>
-    <span class="btn">查看教程</span>
-  </a>
-</div>
+自动巡检主机状态、端口连通性与服务健康情况。
+
+- 详情页：[/download/internal-inspector/](/download/internal-inspector/)
+- 最新版：`v1.2.0`
+- 适用：Windows x64
+
+### 发布助手
+
+一键打包并发布服务到目标服务器，支持多环境参数模板。
+
+- 详情页：[/download/release-helper/](/download/release-helper/)
+- 最新版：`v0.9.3`
+- 适用：Windows / Linux
+
+## 开源软件
+
+### Git
+
+- 详情页：[/download/git/](/download/git/)
+- 官方下载：https://git-scm.com/downloads
+
+### Visual Studio Code
+
+- 详情页：[/download/vscode/](/download/vscode/)
+- 官方下载：https://code.visualstudio.com/Download
+
+### Node.js
+
+- 详情页：[/download/nodejs/](/download/nodejs/)
+- 官方下载：https://nodejs.org/en/download
+
+---
+
+> 建议：后续每新增一个软件，都按“总览 + 独立详情页”结构维护，便于长期管理。

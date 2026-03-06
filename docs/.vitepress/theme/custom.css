@@ -1,79 +1,18 @@
-/* Dark tech style for homepage hero */
-:root {
-  --vp-home-hero-name-color: #f8fafc;
-  --vp-home-hero-text-color: #c7d2fe;
-  --vp-home-hero-tagline-color: #cbd5e1;
+/* Force nav menu visible on Teek full image banner */
+.VPNavBar.full-img-nav-bar .VPNavBarMenu {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
-.VPHome {
-  background: radial-gradient(1200px 600px at 70% 10%, rgba(59, 130, 246, 0.25), transparent 60%),
-    linear-gradient(180deg, #020617 0%, #0b1120 55%, #111827 100%);
+/* Make menu text readable on dark earth background */
+.VPNavBar.full-img-nav-bar .VPNavBarMenu .VPNavBarMenuLink,
+.VPNavBar.full-img-nav-bar .VPNavBarMenu .VPLink,
+.VPNavBar.full-img-nav-bar .content-body .title {
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 
-.VPHome .VPImage.image-src {
-  border-radius: 20px;
-  box-shadow: 0 20px 80px rgba(56, 189, 248, 0.35);
-}
-
-.VPHome .VPFeature {
-  background: rgba(15, 23, 42, 0.65);
-  border: 1px solid rgba(148, 163, 184, 0.22);
-  backdrop-filter: blur(8px);
-}
-
-.VPHome .VPFeature .title,
-.VPHome .VPFeature .details {
-  color: #e2e8f0;
-}
-
-/* Download hub cards */
-.download-hub {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
-  margin-top: 16px;
-}
-
-.download-card {
-  display: block;
-  text-decoration: none !important;
-  padding: 18px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.86), rgba(30, 41, 59, 0.86));
-  border: 1px solid rgba(148, 163, 184, 0.26);
-  color: #e2e8f0;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.download-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.45);
-  border-color: rgba(56, 189, 248, 0.5);
-}
-
-.download-card .title {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-
-.download-card .meta {
-  font-size: 13px;
-  color: #93c5fd;
-  margin-bottom: 8px;
-}
-
-.download-card .desc {
-  color: #cbd5e1;
-  min-height: 44px;
-}
-
-.download-card .btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 7px 12px;
-  border-radius: 999px;
-  background: rgba(59, 130, 246, 0.2);
-  border: 1px solid rgba(96, 165, 250, 0.5);
-  color: #dbeafe;
+.VPNavBar.full-img-nav-bar .VPNavBarMenu .VPNavBarMenuLink:hover,
+.VPNavBar.full-img-nav-bar .VPNavBarMenu .VPLink:hover {
+  color: #ffffff !important;
 }

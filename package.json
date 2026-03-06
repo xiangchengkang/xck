@@ -9,9 +9,5 @@
   "dependencies": {
     "vitepress": "^1.6.4",
     "vitepress-theme-teek": "^1.5.5"
-  },
-  "optionalDependencies": {
-  "@rollup/rollup-linux-x64-gnu": "^4.20.0"
   }
-  
 }
