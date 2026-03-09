@@ -8,7 +8,7 @@ download_config:
       name: EQMS-BI
       icon: 📊
       version: v1.4.3
-    #   description: 企业质量管理系统数据分析平台，提供全面的业务智能分析和可视化报表。
+      description: 企业质量管理系统数据分析平台，提供全面的业务智能分析和可视化报表。
       platform: Windows
       platformIcon: 🖥️
       features: [数据可视化, 报表生成, 数据分析]

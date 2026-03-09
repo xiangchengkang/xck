@@ -145,7 +145,7 @@ const activeTab = ref('self')
           </div>
           
           <div class="card-actions">
-            <a :href="software.downloadUrl || software.detailUrl" class="btn btn-primary">
+            <a :href="software.downloadUrl || software.detailUrl" class="btn btn-primary" rel="noopener" target="_blank">
               <span>📥</span>
               <span>立即下载</span>
             </a>

@@ -67,6 +67,20 @@ export default defineConfig({
       { text: '下载', link: '/download/' },
       { text: '指南', link: '/guide/start' },
       { text: '关于', link: '/about' }
-    ]
+    ],
+    sidebar: {
+      '/download/': [
+        {
+          text: '下载中心',
+          items: [
+            { text: 'EQMS-BI', link: '/download/eqms-bi/' },
+            { text: '发布助手', link: '/download/release-helper/' },
+            { text: 'Git', link: '/download/git/' },
+            { text: 'Visual Studio Code', link: '/download/vscode/' },
+            { text: 'Node.js', link: '/download/nodejs/' }
+          ]
+        }
+      ]
+    }
   }
 })
