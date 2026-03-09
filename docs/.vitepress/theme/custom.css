@@ -1,47 +1,183 @@
-/* Force nav menu visible on Teek full image banner */
-.VPNavBar.full-img-nav-bar .VPNavBarMenu {
-  display: flex !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+/* 全局样式 */
+:root {
+  --primary-color: #3b82f6;
+  --primary-hover: #2563eb;
+  --background: #ffffff;
+  --card-background: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border-color: #e2e8f0;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* Make menu text readable on dark earth background */
-.VPNavBar.full-img-nav-bar .VPNavBarMenu .VPNavBarMenuLink,
-.VPNavBar.full-img-nav-bar .VPNavBarMenu .VPLink,
-.VPNavBar.full-img-nav-bar .content-body .title {
-  color: rgba(255, 255, 255, 0.95) !important;
+.dark {
+  --primary-color: #3b82f6;
+  --primary-hover: #60a5fa;
+  --background: #0f172a;
+  --card-background: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --border-color: #334155;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
 
-.VPNavBar.full-img-nav-bar .VPNavBarMenu .VPNavBarMenuLink:hover,
-.VPNavBar.full-img-nav-bar .VPNavBarMenu .VPLink:hover {
-  color: #ffffff !important;
-}
-
-/* Progressive Banner Loading Styles */
-/* Hide Teek's default banner background image to use our progressive loading */
-.tk-banner-bg-image {
-  background-image: none !important;
-}
-
-/* Ensure progressive banner is behind the content */
-.progressive-banner {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-/* Ensure banner content is above the progressive background */
-.tk-banner__content {
-  position: relative;
-  z-index: 1;
-}
-
-/* Ensure the banner container has proper positioning */
-.tk-banner {
-  position: relative;
-}
-
-/* Hide any mask that might interfere */
-.tk-banner-bg-image .mask {
+/* 隐藏首页侧边栏 */
+.tk-home-card-list {
   display: none !important;
+}
+
+/* 调整首页内容区域宽度 */
+.tk-home-main {
+  width: 100% !important;
+  max-width: 1200px !important;
+}
+
+/* 文章卡片样式 */
+.tk-post-item-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  overflow: hidden !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.tk-post-item-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15) !important;
+  border-color: rgba(59, 130, 246, 0.3) !important;
+}
+
+/* 卡片头部 */
+.tk-post-item-card .tk-post-item-header {
+  padding: 1rem !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+  flex: 0 0 auto !important;
+}
+
+/* 卡片标题 */
+.tk-post-item-card .tk-post-item-title {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: var(--text-primary) !important;
+  margin-bottom: 0.5rem !important;
+  transition: color 0.3s ease !important;
+}
+
+.tk-post-item-card:hover .tk-post-item-title {
+  color: var(--primary-color) !important;
+}
+
+/* 卡片内容 */
+.tk-post-item-card .tk-post-item-content {
+  padding: 1rem !important;
+  flex: 1 1 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* 卡片描述 */
+.tk-post-item-card .tk-post-item-excerpt {
+  color: var(--text-secondary) !important;
+  line-height: 1.6 !important;
+  margin-bottom: 1rem !important;
+  flex: 1 1 auto !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+/* 卡片标签 */
+.tk-post-item-card .tk-post-item-tags {
+  margin-top: 1rem !important;
+  flex: 0 0 auto !important;
+}
+
+.tk-post-item-card .tk-post-item-tag {
+  background: rgba(59, 130, 246, 0.1) !important;
+  color: var(--primary-color) !important;
+  padding: 0.25rem 0.75rem !important;
+  border-radius: 12px !important;
+  font-size: 0.75rem !important;
+  margin-right: 0.5rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.tk-post-item-card .tk-post-item-tag:hover {
+  background: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* 卡片底部 */
+.tk-post-item-card .tk-post-item-footer {
+  padding: 1rem !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+  flex: 0 0 auto !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+/* 卡片日期 */
+.tk-post-item-card .tk-post-item-date {
+  color: var(--text-secondary) !important;
+  font-size: 0.75rem !important;
+}
+
+/* 卡片阅读量 */
+.tk-post-item-card .tk-post-item-view {
+  color: var(--text-secondary) !important;
+  font-size: 0.75rem !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.tk-post-item-card .tk-post-item-view::before {
+  content: '👁️' !important;
+  margin-right: 0.25rem !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .tk-post-item-card {
+    margin-bottom: 1rem !important;
+  }
+  
+  .tk-post-item-card .tk-post-item-title {
+    font-size: 1rem !important;
+  }
+  
+  .tk-post-item-card .tk-post-item-excerpt {
+    font-size: 0.875rem !important;
+  }
+}
+
+/* 深色模式适配 */
+.dark .tk-post-item-card {
+  background: linear-gradient(145deg, #1e293b, #0f172a) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .tk-post-item-card .tk-post-item-header {
+  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .tk-post-item-card .tk-post-item-footer {
+  border-top-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .tk-post-item-card .tk-post-item-tag {
+  background: rgba(59, 130, 246, 0.2) !important;
+}
+
+.dark .tk-post-item-card .tk-post-item-tag:hover {
+  background: var(--primary-color) !important;
+  color: white !important;
 }

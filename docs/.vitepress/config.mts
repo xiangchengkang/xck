@@ -7,6 +7,23 @@ const teek = defineTeekConfig({
   vpHome: false,
   pageStyle: 'segment',
 
+  // 文章列表配置 - 使用卡片风格
+  post: {
+    postStyle: 'card',
+    showMore: true,
+    moreLabel: '阅读全文 →',
+    transition: true,
+    coverImgMode: 'default'
+  },
+
+  // 分页配置
+  page: {
+    pageSize: 6
+  },
+
+  // 首页卡片列表位置 - center 表示居中，不显示侧边栏
+  homeCardListPosition: 'center',
+
   banner: {
     bgStyle: 'fullImg',
     // 高清原图路径
@@ -24,7 +41,7 @@ const teek = defineTeekConfig({
     features: [
       { title: '结构化内容', details: '自动生成目录、索引与归档，快速搭建体系化文档。' },
       { title: '碎片化展示', details: '卡片化信息布局，阅读和浏览体验更舒服。' },
-      { title: '高颜值首页', details: 'Banner + Feature 区块，一上来就不再“简陋”。' }
+      { title: '高颜值首页', details: 'Banner + Feature 区块，一上来就不再"简陋"。' }
     ]
   },
 
