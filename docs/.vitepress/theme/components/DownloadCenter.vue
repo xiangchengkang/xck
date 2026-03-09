@@ -62,6 +62,16 @@ const openSourceSoftware = computed(() => {
 })
 
 const activeTab = ref('self')
+
+const handleDownload = (software: Software) => {
+  const link = document.createElement('a')
+  link.href = software.downloadUrl || software.detailUrl
+  link.download = software.name
+  link.referrerPolicy = 'unsafe-url'
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
 </script>
 
 <template>
@@ -145,10 +155,10 @@ const activeTab = ref('self')
           </div>
           
           <div class="card-actions">
-            <a :href="software.downloadUrl || software.detailUrl" class="btn btn-primary" rel="noopener" referrerpolicy="unsafe-url" download>
+            <button @click="handleDownload(software)" class="btn btn-primary">
               <span>📥</span>
               <span>立即下载</span>
-            </a>
+            </button>
             <a :href="software.detailUrl" class="btn btn-secondary">
               <span>📖</span>
               <span>详情</span>
