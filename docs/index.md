@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: 项成康
-  # text: VitePress 主题
-  # tagline: 一个轻量、简洁高效、灵活配置、易于扩展的知识库站点
+  name: Teek
+  text: VitePress 主题
+  tagline: 一个轻量、简洁高效、灵活配置、易于扩展的知识库站点
   image:
-    src: /images/hero.jpg
-    # alt: Teek
+    src: https://testingcf.jsdelivr.net/gh/Kele-Bingtang/static/vp-teek-cover/teek-logo.png
+    alt: Teek
   actions:
     - theme: brand
       text: 开始

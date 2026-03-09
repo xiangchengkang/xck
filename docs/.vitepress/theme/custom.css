@@ -16,3 +16,32 @@
 .VPNavBar.full-img-nav-bar .VPNavBarMenu .VPLink:hover {
   color: #ffffff !important;
 }
+
+/* Progressive Banner Loading Styles */
+/* Hide Teek's default banner background image to use our progressive loading */
+.tk-banner-bg-image {
+  background-image: none !important;
+}
+
+/* Ensure progressive banner is behind the content */
+.progressive-banner {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Ensure banner content is above the progressive background */
+.tk-banner__content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure the banner container has proper positioning */
+.tk-banner {
+  position: relative;
+}
+
+/* Hide any mask that might interfere */
+.tk-banner-bg-image .mask {
+  display: none !important;
+}

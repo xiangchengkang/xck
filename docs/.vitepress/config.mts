@@ -2,12 +2,14 @@ import { defineConfig } from 'vitepress'
 import { defineTeekConfig } from 'vitepress-theme-teek/config'
 
 const teek = defineTeekConfig({
+  // 启用 Teek 首页
   teekHome: true,
   vpHome: false,
   pageStyle: 'segment',
 
   banner: {
     bgStyle: 'fullImg',
+    // 高清原图路径
     imgSrc: '/images/hero.jpg',
     mask: false,
     maskBg: 'rgba(0,0,0,0.35)',

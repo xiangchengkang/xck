@@ -9,5 +9,8 @@
   "dependencies": {
     "vitepress": "^1.6.4",
     "vitepress-theme-teek": "^1.5.5"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
   }
 }
