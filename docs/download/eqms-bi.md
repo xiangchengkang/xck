@@ -13,7 +13,7 @@ EMQS数据统计软件。
 
 | 版本 | 日期 | 平台 | 下载 |
 | --- | --- | --- | --- |
-| v1.4.3 | 2025-02-27 | Windows 10/11 | [download](https://xck-download.oss-cn-hangzhou.aliyuncs.com/EQMS-BI-v1.4.3.exe) |
+| v1.4.3 | 2026-02-27 | Windows 10/11 | [download](https://xck-download.oss-cn-hangzhou.aliyuncs.com/EQMS-BI-v1.4.3.exe) |
 | v1.3.0 | 2025-12-25  | Windows 10/11  | [download](https://xck-download.oss-cn-hangzhou.aliyuncs.com/EQMS-BI-v1.3.0.exe) |
 
 
@@ -24,7 +24,7 @@ EMQS数据统计软件。
 1. 下载 EQMS-BI
 2. 双击 `EQMS-BI.exe`
 
-
+![EQMS-BI](/eqms-bi/image1.png)
 
 
 ## 更新记录

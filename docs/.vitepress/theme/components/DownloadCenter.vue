@@ -117,11 +117,11 @@ const handleDownload = (software: Software) => {
     <!-- 自研软件区域 -->
     <section v-show="activeTab === 'self'" class="software-section">
       <div class="section-header">
-        <h2 class="section-title">
+        <!-- <h2 class="section-title">
           <span class="section-icon">🛠️</span>
           自研软件
-        </h2>
-        <p class="section-desc">专为提升开发运维效率打造的工具</p>
+        </h2> -->
+        <!-- <p class="section-desc">专为提升开发运维效率打造的工具</p> -->
       </div>
       
       <div class="software-grid">
@@ -171,11 +171,11 @@ const handleDownload = (software: Software) => {
     <!-- 开源软件区域 -->
     <section v-show="activeTab === 'opensource'" class="software-section">
       <div class="section-header">
-        <h2 class="section-title">
+        <!-- <h2 class="section-title">
           <span class="section-icon">🌐</span>
           开源软件
         </h2>
-        <p class="section-desc">常用开发工具官方下载入口</p>
+        <p class="section-desc">常用开发工具官方下载入口</p> -->
       </div>
       
       <div class="opensource-grid">
