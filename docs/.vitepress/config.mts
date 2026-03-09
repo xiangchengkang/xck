@@ -57,6 +57,9 @@ export default defineConfig({
   title: '首页',
   description: '一个简洁高效的 VitePress 站点',
   appearance: false,
+  head: [
+    ['meta', { name: 'referrer', content: 'unsafe-url' }]
+  ],
 
   ...teek,
   themeConfig: {
