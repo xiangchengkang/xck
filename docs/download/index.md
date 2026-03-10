@@ -6,6 +6,7 @@ download_config:
   self_developed:
     - id: eqms-bi
       name: EQMS-BI
+      sticky: true  # 置顶
       icon: 📊
       version: v1.4.3
       description: 企业质量管理系统数据分析平台，提供全面的业务智能分析和可视化报表。

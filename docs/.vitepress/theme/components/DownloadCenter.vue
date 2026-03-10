@@ -14,6 +14,7 @@ interface Software {
   downloadUrl?: string
   officialUrl?: string
   color: string
+  sticky?: boolean | number
 }
 
 const props = defineProps<{
@@ -49,16 +50,24 @@ const defaultOpenSource: Software[] = [
   }
 ]
 
+const getStickyValue = (item: Software): number => {
+  if (item.sticky === true) return 1
+  if (typeof item.sticky === 'number') return item.sticky
+  return 0
+}
+
 const selfDevelopedSoftware = computed(() => {
-  return props.selfDeveloped && props.selfDeveloped.length > 0 
+  const list = props.selfDeveloped && props.selfDeveloped.length > 0 
     ? props.selfDeveloped 
     : defaultSelfDeveloped
+  return [...list].sort((a, b) => getStickyValue(b) - getStickyValue(a))
 })
 
 const openSourceSoftware = computed(() => {
-  return props.openSource && props.openSource.length > 0 
+  const list = props.openSource && props.openSource.length > 0 
     ? props.openSource 
     : defaultOpenSource
+  return [...list].sort((a, b) => getStickyValue(b) - getStickyValue(a))
 })
 
 const activeTab = ref('self')

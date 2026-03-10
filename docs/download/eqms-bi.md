@@ -1,6 +1,8 @@
 ---
 title: EQMS-BI
-
+date: 2026-03-08
+coverImg: /eqms-bi/eqms-bi-cover1.jpg
+sticky: 1
 ---
 
 # EQMS-BI

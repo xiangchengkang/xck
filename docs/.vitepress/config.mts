@@ -7,9 +7,9 @@ const teek = defineTeekConfig({
   vpHome: false,
   pageStyle: 'segment',
 
-  // 文章列表配置 - 使用卡片风格
+  // 文章列表配置 - 使用列表风格
   post: {
-    postStyle: 'card',
+    postStyle: 'list',
     showMore: true,
     moreLabel: '阅读全文 →',
     transition: true,
@@ -27,7 +27,8 @@ const teek = defineTeekConfig({
   banner: {
     bgStyle: 'fullImg',
     // 高清原图路径
-    imgSrc: '/images/hero.jpg',
+    // imgSrc: '/images/hero.jpg',
+    imgSrc: 'https://xck-download.oss-cn-hangzhou.aliyuncs.com/img/hero.jpg',
     mask: false,
     maskBg: 'rgba(0,0,0,0.35)',
     name: 'xiangchengkang',
