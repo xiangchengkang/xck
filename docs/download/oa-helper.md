@@ -12,7 +12,7 @@ title: OA助手
 
 | 版本 | 日期 | 平台 | 下载 |
 | --- | --- | --- | --- |
-| v0.1.2 | 2026-03-11 | Windows x64 | [download](https://xck-download.oss-cn-hangzhou.aliyuncs.com/OA-helper/oa-helper-v0.1.3.exe) |
+| v0.1.3 | 2026-03-11 | Windows x64 | [download](https://xck-download.oss-cn-hangzhou.aliyuncs.com/OA-helper/oa-helper-v0.1.3.exe) |
 
 ## 使用教程
 

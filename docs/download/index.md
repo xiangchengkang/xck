@@ -19,13 +19,13 @@ download_config:
     - id: OA-helper
       name: OA助手
       icon: 🚀
-      version: v0.1.2
+      version: v0.1.3
       description: 快速OA外访流程申请。
       platform: Windows
       platformIcon: 💻
       # features: [一键部署, 多环境支持, 参数模板]
       detailUrl: /download/OA-helper/
-      downloadUrl: https://xck-download.oss-cn-hangzhou.aliyuncs.com/OA-helper/OA%E5%8A%A9%E6%89%8B-v0.1.2.exe
+      downloadUrl: https://xck-download.oss-cn-hangzhou.aliyuncs.com/OA-helper/oa-helper-v0.1.3.exe
       color: purple
   open_source:
     - id: git
