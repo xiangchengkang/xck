@@ -72,9 +72,14 @@ const openSourceSoftware = computed(() => {
 
 const activeTab = ref('self')
 
+const normalizeDetailUrl = (url?: string) => {
+  if (!url) return url
+  return url.startsWith('/') ? url.toLowerCase() : url
+}
+
 const handleDownload = (software: Software) => {
   const link = document.createElement('a')
-  link.href = software.downloadUrl || software.detailUrl
+  link.href = software.downloadUrl || normalizeDetailUrl(software.detailUrl)
   link.download = software.name
   link.referrerPolicy = 'unsafe-url'
   document.body.appendChild(link)
@@ -168,7 +173,7 @@ const handleDownload = (software: Software) => {
               <span>📥</span>
               <span>立即下载</span>
             </button>
-            <a :href="software.detailUrl" class="btn btn-secondary">
+            <a :href="normalizeDetailUrl(software.detailUrl)" class="btn btn-secondary">
               <span>📖</span>
               <span>详情</span>
             </a>
@@ -202,7 +207,7 @@ const handleDownload = (software: Software) => {
               <span>🔗</span>
               <span>官方下载</span>
             </a>
-            <a v-if="software.detailUrl" :href="software.detailUrl" class="btn btn-text">
+            <a v-if="software.detailUrl" :href="normalizeDetailUrl(software.detailUrl)" class="btn btn-text">
               <span>📄</span>
               <span>安装指南</span>
             </a>
