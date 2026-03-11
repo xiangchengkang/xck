@@ -50,14 +50,28 @@
 
 /* 首页文章列表 - 大封面布局 */
 .tk-post-item {
-  display: flex !important;
-  align-items: stretch !important;
-  gap: 24px !important;
-  padding: 18px 24px !important;
+  width: 100% !important;
   border-radius: 18px !important;
   background: linear-gradient(150deg, #ffffff 0%, #f8fafc 100%) !important;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08) !important;
   border: 1px solid rgba(148, 163, 184, 0.18) !important;
+}
+
+.tk-post-item .list {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 240px !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 16px 20px !important;
+  width: 100% !important;
+}
+
+.tk-post-item .list:has(.tk-post-item__right:empty) {
+  grid-template-columns: 1fr !important;
+}
+
+.tk-post-item__right:empty {
+  display: none !important;
 }
 
 .tk-post-item:hover {
@@ -67,6 +81,15 @@
 
 .tk-post-item__left {
   padding: 0 !important;
+  min-width: 0 !important;
+}
+
+.tk-post-item__right {
+  margin-left: auto !important;
+  justify-self: end !important;
+  width: 240px !important;
+  display: flex !important;
+  justify-content: flex-end !important;
 }
 
 .tk-post-item__left__title {
@@ -78,6 +101,7 @@
 
 .tk-post-item__left__excerpt {
   margin-top: 0.75rem !important;
+  max-width: none !important;
 }
 
 .tk-post-item__left__excerpt .excerpt {
@@ -86,13 +110,12 @@
 }
 
 .tk-post-item__right {
-  display: flex !important;
   align-items: center !important;
 }
 
 .tk-post-item__right .cover.default .cover-img {
-  width: 260px !important;
-  height: 160px !important;
+  width: 240px !important;
+  height: 150px !important;
   border-radius: 16px !important;
   margin-right: 0 !important;
   background-size: cover !important;
@@ -101,21 +124,22 @@
 }
 
 .tk-post-item__right .cover.full .cover-img {
-  max-width: 320px !important;
-  height: 180px !important;
+  max-width: 280px !important;
+  height: 160px !important;
   border-radius: 18px !important;
   clip-path: inset(0 round 18px) !important;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18) !important;
 }
 
 @media (max-width: 960px) {
-  .tk-post-item {
-    flex-direction: column !important;
+  .tk-post-item .list {
+    grid-template-columns: 1fr !important;
     gap: 16px !important;
   }
 
   .tk-post-item__right {
     width: 100% !important;
+    justify-content: flex-start !important;
   }
 
   .tk-post-item__right .cover.default .cover-img,

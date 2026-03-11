@@ -10,10 +10,20 @@ const teek = defineTeekConfig({
   // 文章列表配置 - 使用列表风格
   post: {
     postStyle: 'list',
+    excerptPosition: 'bottom',
+    showCapture: false,
     showMore: true,
     moreLabel: '阅读全文 →',
     transition: true,
-    coverImgMode: 'default'
+    coverImgMode: 'default',
+    defaultCoverImg: []
+  },
+
+  // 文章信息配置（创建时间/更新时间等）
+  articleAnalyze: {
+    showInfo: 'post',
+    showCreateDate: true,
+    showUpdateDate: true
   },
 
   // 分页配置
@@ -27,7 +37,6 @@ const teek = defineTeekConfig({
   banner: {
     bgStyle: 'fullImg',
     // 高清原图路径
-    // imgSrc: '/images/hero.jpg',
     imgSrc: 'https://xck-download.oss-cn-hangzhou.aliyuncs.com/img/hero.jpg',
     mask: false,
     maskBg: 'rgba(0,0,0,0.35)',
@@ -78,7 +87,7 @@ export default defineConfig({
           text: '下载中心',
           items: [
             { text: 'EQMS-BI', link: '/download/eqms-bi/' },
-            { text: '发布助手', link: '/download/release-helper/' },
+            { text: 'OA助手', link: '/download/OA-helper/' },
             { text: 'Git', link: '/download/git/' },
             { text: 'Visual Studio Code', link: '/download/vscode/' },
             { text: 'Node.js', link: '/download/nodejs/' }

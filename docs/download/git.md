@@ -1,6 +1,7 @@
 ---
 title: Git
 cover: /eqms-bi/eqms-bi-cover1.jpg
+article: false
 
 ---
 

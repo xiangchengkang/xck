@@ -16,16 +16,16 @@ download_config:
       detailUrl: /download/eqms-bi/
       downloadUrl: https://xck-download.oss-cn-hangzhou.aliyuncs.com/EQMS-BI-v1.4.3.exe
       color: green
-    - id: release-helper
-      name: 发布助手
+    - id: OA-helper
+      name: OA助手
       icon: 🚀
-      version: v0.9.3
-      description: 一键打包并发布服务到目标服务器，支持多环境参数模板。
-      platform: Windows / Linux
+      version: v0.1.2
+      description: 快速OA外访流程申请。
+      platform: Windows
       platformIcon: 💻
-      features: [一键部署, 多环境支持, 参数模板]
-      detailUrl: /download/release-helper/
-      downloadUrl: /download/release-helper/
+      # features: [一键部署, 多环境支持, 参数模板]
+      detailUrl: /download/OA-helper/
+      downloadUrl: https://xck-download.oss-cn-hangzhou.aliyuncs.com/OA-helper/OA%E5%8A%A9%E6%89%8B-v0.1.2.exe
       color: purple
   open_source:
     - id: git

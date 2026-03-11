@@ -1,5 +1,7 @@
 ---
 title: 发布助手
+article: false
+
 ---
 
 # 发布助手

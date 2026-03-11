@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Code
+article: false
+
 ---
 
 # Visual Studio Code
