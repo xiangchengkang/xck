@@ -87,7 +87,7 @@ export default defineConfig({
           text: '下载中心',
           items: [
             { text: 'EQMS-BI', link: '/download/eqms-bi/' },
-            { text: 'OA助手', link: '/download/OA-helper/' },
+            { text: 'OA助手', link: '/download/oa-helper/' },
             { text: 'Git', link: '/download/git/' },
             { text: 'Visual Studio Code', link: '/download/vscode/' },
             { text: 'Node.js', link: '/download/nodejs/' }
